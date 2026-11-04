@@ -1,0 +1,2 @@
+Taruh foto produk di folder ini, lalu tulis nama filenya di ../../foto-produk.js
+Saran: nama file huruf kecil tanpa spasi (contoh: urban-stride-1.jpg), ukuran persegi (1:1) sekitar 700x700 px atau lebih.
