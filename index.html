@@ -37,6 +37,17 @@
       STEP<span style="opacity:.4">&</span>BAG
     </a>
 
+    <!-- Cari (mobile), wishlist & keranjang: di luar collapse agar selalu terlihat di mobile -->
+    <div class="nav-actions">
+      <button class="nav-icon-btn d-lg-none" id="mobileSearchBtn" aria-label="Buka pencarian"><i class="bi bi-search"></i></button>
+      <button class="nav-icon-btn" id="wishlistOpenBtn" aria-label="Buka wishlist" data-bs-toggle="offcanvas" data-bs-target="#wishlistOffcanvas">
+        <i class="bi bi-heart"></i><span class="badge-count" id="wishlistCount">0</span>
+      </button>
+      <button class="nav-icon-btn" id="cartOpenBtn" aria-label="Buka keranjang belanja" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+        <i class="bi bi-bag"></i><span class="badge-count" id="cartCount">0</span>
+      </button>
+    </div>
+
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Buka menu navigasi">
       <i class="bi bi-list fs-2"></i>
     </button>
@@ -52,25 +63,18 @@
         <li class="nav-item"><a class="nav-link nav-link-custom" href="#contact">Kontak</a></li>
       </ul>
 
-      <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+      <div class="d-flex align-items-center gap-2">
         <div class="search-pill d-none d-lg-flex">
           <i class="bi bi-search text-soft"></i>
           <input type="search" id="navSearchInput" placeholder="Cari sepatu, tas..." aria-label="Cari produk">
         </div>
-        <button class="nav-icon-btn d-lg-none" id="mobileSearchBtn" aria-label="Buka pencarian"><i class="bi bi-search"></i></button>
-        <button class="nav-icon-btn" id="wishlistOpenBtn" aria-label="Buka wishlist" data-bs-toggle="offcanvas" data-bs-target="#wishlistOffcanvas">
-          <i class="bi bi-heart"></i><span class="badge-count" id="wishlistCount">0</span>
-        </button>
-        <button class="nav-icon-btn" id="cartOpenBtn" aria-label="Buka keranjang belanja" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
-          <i class="bi bi-bag"></i><span class="badge-count" id="cartCount">0</span>
-        </button>
       </div>
     </div>
   </div>
 </nav>
 
 <!-- Mobile search bar -->
-<div class="d-lg-none bg-glass p-2 d-none" id="mobileSearchBar" style="position:sticky;top:64px;z-index:1020;">
+<div class="d-lg-none bg-glass p-2 d-none" id="mobileSearchBar" style="position:sticky;z-index:1020;">
   <div class="search-pill w-100">
     <i class="bi bi-search text-soft"></i>
     <input type="search" id="mobileSearchInput" placeholder="Cari sepatu, tas..." aria-label="Cari produk">
